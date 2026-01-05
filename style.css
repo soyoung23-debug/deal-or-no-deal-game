@@ -28,25 +28,6 @@ body {
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
 }
 
-.portfolio-btn {
-  background: linear-gradient(135deg, #7f8c8d 0%, #34495e 50%, #2c3e50 100%);
-  color: #ecf0f1; 
-  border: 1px solid #95a5a6; 
-  padding: 8px 15px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.portfolio-btn:hover {
-  background: linear-gradient(135deg, #bdc3c7 0%, #7f8c8d 100%);
-  color: #ffffff;
-  border-color: #ffffff;
-  box-shadow: 0 0 15px rgba(189, 195, 199, 0.5);
-  transform: translateY(-2px); 
-}
-
 .game-title {
   font-family: 'Arial Black', sans-serif;
   font-size: 4.5rem;
@@ -382,6 +363,35 @@ button:disabled {
 @keyframes flash {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+.game-footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #d4af37;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.footer-content p {
+  font-size: 0.85rem;
+  margin: 10px 0;
+  color: #aaa;
+}
+
+.game-footer {
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+
+.game-footer a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.disclaimer {
+  font-size: 0.7rem !important;
+  opacity: 0.6;
 }
 
 @media (max-width: 900px) {

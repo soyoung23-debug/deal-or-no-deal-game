@@ -270,8 +270,4 @@ document.getElementById('restartBtn').addEventListener('click', () => {
     location.reload(); 
 });
 
-document.getElementById('portfolioBtn').addEventListener('click', () => {
-    window.open('https://soyoung23-debug.github.io/webdev/', '_blank');
-});
-
 initGame();
