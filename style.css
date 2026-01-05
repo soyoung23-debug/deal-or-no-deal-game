@@ -371,17 +371,14 @@ button:disabled {
   text-align: center;
   border-top: 1px solid #d4af37;
   background: rgba(255, 255, 255, 0.03);
+  padding: 4px 10px;
+  font-size: 0.8rem;
 }
 
 .footer-content p {
   font-size: 0.85rem;
   margin: 10px 0;
   color: #aaa;
-}
-
-.game-footer {
-  padding: 4px 10px;
-  font-size: 0.8rem;
 }
 
 .game-footer a {
