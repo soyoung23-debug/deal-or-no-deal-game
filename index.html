@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deal or No Deal Online Game</title>
+
+    <link rel="stylesheet" href='style.css'>
+
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+<div id="effectOverlay"></div>
+
+<div class="game">
+
+    <div class="intro">
+        <div>
+            <button id="portfolioBtn" class="portfolio-btn">Who made this?</button>
+        </div>
+        
+        <h1 class="game-title">Deal or No Deal?</h1>
+        <p class="game-subtitle">There's only one question to this game.
+            Test your luck. Outsmart the banker.</p>
+        
+        <div class="rules-container">
+            <h3>Rules to play!</h3>
+            <ul>
+                <li> Choose your case to start the game.</li>
+                <li> There are 5 rounds in total, click 5 cases to open per round.  </li>
+                <li> Banker makes offer every round, be sure to make the right answer! </li>
+            </ul>    
+        </div>
+    </div>
+
+    <div class="board">
+        
+        <div class="cases-column unopened">
+            <h2>Available Cases</h2>
+            <div class="cases-grid" id="unopenedCases"></div>
+        </div>
+
+        <div class="center-panel" id="bankerPanel">
+            
+            <div class="round-counter" id="roundInfo" style="visibility: hidden;">
+                Round <span id="currentRoundDisplay">1</span>
+                Cases to Open: <span id="casesLeftDisplay">5</span>/5
+            </div>
+
+            <p class="banker-text">Choose your lucky case!</p>
+
+            <div class="chosen-case-slot"></div>
+
+            <div class="offer-display shimmer-effect">
+                <small>Banker's Offer</small>
+                <div class="offer" id="currentOfferDisplay">$—</div>
+            </div>
+
+                <div id="prevOfferContainer" class="previous-offer" style="visibility: hidden;">
+                    Last Offer: <span id="lastOfferDisplay">$0</span>
+                </div>
+
+            <div class="controls">
+                <button class="deal">DEAL</button>
+                <button class="no-deal">NO DEAL</button>
+            </div>
+
+            <div id="finalMessage" style="margin-top: 15px; font-weight: bold; font-size: 1.2em; min-height: 1.5em;"></div>
+
+            <button id="restartBtn" class="restart-btn" style="display: none; margin-top: 20px;">
+                Play Again
+            </button>
+
+        </div>
+
+        <div class="cases-column opened">
+            <h2>Opened Cases</h2>
+            <div class="cases-grid" id="openedCasesGrid"></div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
